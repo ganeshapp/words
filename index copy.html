@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Random Words Generator</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    /* Choose a visually appealing font for the text */
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Use a color scheme that complements the color of the text */
+#word-list {
+  background-color: #f7f7f7;
+}
+
+#word-list h2 {
+  color: #1d1d1d;
+}
+
+#word-list li {
+  color: #333;
+}
+
+/* Add hover effects to the words */
+#word-list li:hover {
+  background-color: #e1e1e1;
+}
+
+/* Use a responsive design */
+@media only screen and (max-width: 768px) {
+  #word-list {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Add some whitespace around the words */
+#word-list {
+  padding: 20px;
+}
+
+/* Use a grid or flexbox layout */
+#word-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+</style>
+</head>
+<body>
+  <h1>Random Words Generator</h1>
+  <button onclick="generateWords()">Generate Random Words</button>
+  <div id="words"></div>
+  <script src="script.js"></script>
+</body>
+</html>

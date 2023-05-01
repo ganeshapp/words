@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+
+  .word-list li {
+        list-style-type: none;
+    }
+  
+  .word-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .word-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .word-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .word-text {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .hover-card {
+    position: absolute;
+  z-index: 999;
+  max-width: 400px;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 1.5;
+  }
+  
+  .hover-card-content {
+    padding: 10px;
+  }
+  
+  .hover-card p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .audio-icon {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    background-image: url("audio-icon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  
+  .meaning {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .synonyms {
+    margin-top: 5px;
+    font-style: italic;
+    color: #666;
+  }
+  
+  .antonyms {
+    margin-top: 5px;
+    font-style: italic;
+    color: #666;
+  }
+  
+  .example-sentences {
+    margin-top: 10px;
+  }
+  
+  .example-sentence {
+    font-style: italic;
+    color: #666;
+  }
